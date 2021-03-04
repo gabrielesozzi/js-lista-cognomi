@@ -8,16 +8,21 @@
 
 
 var listaCognomi = ["Bianchi", "Rossi", "Perlari", "Lodigiani", "Mastrobattista", "Verdi"]
-
+listaCognomi.sort();
 
 var cognome = prompt("Qual è il tuo cognome?")
 listaCognomi.push(cognome)
-listaCognomi.sort();
-
 console.log(listaCognomi);
+
+var listaCognomiSorted = listaCognomi.sort()
+
+
 
 i = 0
 while (i < listaCognomi.length) {
  console.log(listaCognomi[i]);
  i++
 }
+
+
+console.log(listaCognomiSorted.indexOf(cognome));
